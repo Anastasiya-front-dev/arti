@@ -15,12 +15,12 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header__container">
         <div class="header__content">
           <a class="logo" href="#">
             <img class="logo__img" src="images/Logo.svg" alt="logo" />
           </a>
-          <div class="nav__mobile">
+          <div class="nav__mobile nav--diactive">
             <nav class="nav header__nav">
               <ul class="nav__list header__list">
                 <li class="nav__item">
@@ -30,16 +30,36 @@
                   <a class="nav__link" href="#">Features</a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link nav__arrow" href="#">Company</a>
+                  <a class="nav__link nav__arrow  accordionn" href="#">
+                    Company
+                  </a>
+                  <div class="panel panel--mobile">
+                    <div class="panel__inner panel__inner--mobile">
+                      <ul class="nav__list footer__list panel__list--mobile">
+                        <li class="nav__item">
+                          <a class="nav__link" href="#">About</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="#">Privacy</a>
+                        </li>
+                        <li class="nav__item">
+                          <a class="nav__link" href="#">Careers</a>
+                        </li>                       
+                      </ul>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </nav>
             <div class="header__action header__action--mobile">
-              <button class="btn">Login</button>
+              <button class="btn btn__transparent">Login</button>
               <button class="btn btn__primary">Get Started</button>
             </div>
           </div>
-          <label class="burger" for="burger">
+          <label class="burger"  for="burger">
             <input class="burger__list" type="checkbox" id="burger" />
             <span class="burger__item"></span>
             <span class="burger__item"></span>
@@ -47,12 +67,17 @@
             <span class="burger__bg"></span>
           </label>
           <div class="header__action header__action--desc">
-            <button class="btn">Login</button>
+            <button class="btn btn__transparent">Login</button>
             <button class="btn btn__primary">Get Started</button>
           </div>
         </div>
-        <section class="hero">
-          <div class="">
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <main class="main">
+        <div class="inside">
+          <section class="hero container">
             <div class="hero__info">
               <div class="hero__content">
                 <h1 class="hero__title">
@@ -75,7 +100,7 @@
                       class="btn__secondary-icon"
                     />
                   </button>
-                  <button class="btn">
+                  <button class="btn btn__transparent">
                     Download The App
                     <img
                       src="images/icon/app-store.svg"
@@ -86,59 +111,55 @@
                 </div>
               </div>
               <div class="hero__img">
-                <img src="images/phone.png" alt="" class="hero__pic" />
+                <img src="images/phone.svg" alt="" class="hero__pic" />
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-      <section class="hero__footer">
-        <div class="container">
-          <div class="hero__footer-inner">
-            <p class="hero__footer-text">
-              Trusted by thousand companies in the world
-            </p>
-            <div class="hero__footer-company">
-              <img
-                src="images/Company logo-1.png"
-                alt="Mailchimp"
-                class="hero__footer-img"
-              />
-              <img
-                src="images/Company logo-2.png"
-                alt="Airtable"
-                class="hero__footer-img"
-              />
-              <img
-                src="images/Company logo-3.png"
-                alt="Gumroad"
-                class="hero__footer-img"
-              />
-              <img
-                src="images/Company logo-4.png"
-                alt="Notion"
-                class="hero__footer-img"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
+          </section>
 
-    <div class="wrapper">
-      <main class="main">
+          <section class="hero__footer">
+            <div class="container">
+              <div class="hero__footer-inner">
+                <p class="hero__footer-text">
+                  Trusted by thousand companies in the world
+                </p>
+                <div class="hero__footer-company">
+                  <img
+                    src="images/Company logo-1.png"
+                    alt="Mailchimp"
+                    class="hero__footer-img"
+                  />
+                  <img
+                    src="images/Company logo-2.png"
+                    alt="Airtable"
+                    class="hero__footer-img"
+                  />
+                  <img
+                    src="images/Company logo-3.png"
+                    alt="Gumroad"
+                    class="hero__footer-img"
+                  />
+                  <img
+                    src="images/Company logo-4.png"
+                    alt="Notion"
+                    class="hero__footer-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
         <section class="coach box">
           <div class="coach__inner">
             <div class="coach__header">
               <div class="badge">
-              <div class="badge__inner">
-                <span class="badge__ellipse"> </span>
-                <p class="badge__lable">How We Do It</p>
+                <div class="badge__inner">
+                  <span class="badge__ellipse"> </span>
+                  <p class="badge__lable">How We Do It</p>
+                </div>
               </div>
-            </div>
               <h2 class="coach__title">
                 A Small Business Coach
-                <span class="coach__title--green">In Your Pocket</span> .
+                <span class="coach__title--green">In Your Pocket</span>.
               </h2>
               <p class="coach__description">
                 At Arti our passion is your business. Check out just a few of
@@ -284,15 +305,240 @@
             </div>
           </div>
         </section>
+        <section class="box features">
+          <div class="features__inner">
+            <div class="features__content">
+              <div class="features__card features__card--first">
+                <div class="features__pic">
+                  <img
+                    src="images/icon/features-1.svg"
+                    alt=""
+                    class="features__img"
+                  />
+                </div>
+                <div class="features__text">
+                  <h3 class="features__title">Top Loan Suggestions</h3>
+                  <p class="features__description">
+                    Seamlessly manage and expand your business in one place.
+                  </p>
+                </div>
+              </div>
+              <div class="features__card">
+                <div class="features__pic">
+                  <img
+                    src="images/icon/features-2.svg"
+                    alt=""
+                    class="features__img"
+                  />
+                </div>
+                <div class="features__text">
+                  <h3 class="features__title">Let Arti Take The Wheel</h3>
+                  <p class="features__description">
+                    Conversational Chat GPT text goes here that explains what
+                    this is.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="features__content features__content--img">
+             
+            </div>
+            <div class="features__content">
+              <div class="features__card features__card--first">
+                <div class="features__pic">
+                  <img
+                    src="images/icon/features-3.svg"
+                    alt=""
+                    class="features__img"
+                  />
+                </div>
+                <div class="features__text">
+                  <h3 class="features__title">Financial Health</h3>
+                  <p class="features__description">
+                    Get funds fast and to your payment method of choice.
+                  </p>
+                </div>
+              </div>
+              <div class="features__card">
+                <div class="features__pic">
+                  <img
+                    src="images/icon/features-4.svg"
+                    alt=""
+                    class="features__img"
+                  />
+                </div>
+                <div class="features__text">
+                  <h3 class="features__title">Business Enablement Tools</h3>
+                  <p class="features__description">
+                    Enhance your capabilities with our platform crafting
+                    solutions for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cta box">
+          <div class="cta__inner success__inner">
+            <div class="cta__content success__content">
+              <div class="cta__text success__text">
+                <h2 class="cta__title success__title">
+                  A Smarter Way to Manage Your Business
+                </h2>
+                <p class="cta__description success__description">
+                  Stuff enables you to achieve clarity and significant results
+                  on a large scale by linking tasks and workflows to the
+                  overarching objectives of the company
+                </p>
+              </div>
+              <div class="cta__footer">
+                <button class="btn btn__dark">Get Started</button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
-          <div class="footer__inner">
-            <a class="logo" href="#">
-              <img class="logo__img" src="images/Logo.svg" alt="logo" />
-            </a>
-
-            
+        <div class="footer__inner">
+          <div class="footer__main">
+            <div class="footer__conteiner">
+              <div class="footer__content">
+                <a class="footer__logo" href="#">
+                  <img class="footer__img" src="images/Logo.svg" alt="logo" />
+                </a>
+                <p class="footer__tm">Arti Technologies, LLC 2024</p>
+              </div>
+              <div class="footer__social">
+                <p class="footer__title">Follow us on:</p>
+                <ul class="footer__social-list">
+                  <li class="footer__social-item">
+                    <a href="" class="footer__social-link">
+                      <img
+                        src="images/icon/social-1.svg"
+                        alt=""
+                        class="footer__social-img"
+                      />
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a href="" class="footer__social-link">
+                      <img
+                        src="images/icon/social-2.svg"
+                        alt=""
+                        class="footer__social-img"
+                      />
+                    </a>
+                  </li>
+                  <li class="footer__social-item">
+                    <a href="" class="footer__social-link">
+                      <img
+                        src="images/icon/social-3.svg"
+                        alt=""
+                        class="footer__social-img"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__nav">
+              <nav class="nav footer__nav-list">
+                <ul class="nav__list footer__list">
+                  <li class="nav__item">
+                    <a class="nav__main" href="#">Benefits</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Revenue</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Expenses</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Credit</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">See All</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="nav footer__nav-list">
+                <ul class="nav__list footer__list">
+                  <li class="nav__item">
+                    <a class="nav__main" href="#">Features</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Credit Monitoring</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Business Capital</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Insights</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Expense Management</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Intelligence</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Forecasting</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="nav footer__nav-list">
+                <ul class="nav__list footer__list">
+                  <li class="nav__item">
+                    <a class="nav__main" href="#">Company</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">About</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Careers</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Partnerships</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Changelog</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="nav footer__nav-list">
+                <ul class="nav__list footer__list">
+                  <li class="nav__item">
+                    <a class="nav__main" href="#">Resources</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Help Center</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">FAQ</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Developers & API</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Community</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Status</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
+          <div class="footer__rules">
+            <a class="footer__rules-text" href=""> Privacy Policy </a>
+            <a class="footer__rules-text" href=""> Cookies </a>
+            <a class="footer__rules-text" href=""> Security </a>
+            <a class="footer__rules-text" href="">Terms </a>
+          </div>
+        </div>
       </footer>
     </div>
 
