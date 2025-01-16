@@ -244,6 +244,7 @@
     align-items: end;
     row-gap: 64px;
     justify-content: space-between;
+    align-items: end;
     position: relative;
   }
   &__content {
@@ -251,6 +252,7 @@
     padding-top: 150px;
     padding-bottom: 120px;
     z-index: 5;
+    flex:1;
   }
   &__title {
     font-size: 64px;
@@ -274,20 +276,18 @@
     gap: 16px;
   }
   &__img {
-    position: absolute;
-    z-index: 1;
-    left: 720px;
-    // right: 0;
-    bottom: -43px;
-    width: 560px;
-    height: 540px;
+    flex:1;
+    max-width: 560px;
+    max-height: 540px;
+    position: relative;
   }
   &__pic {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: -43px;
+    right: 0;
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
   &__footer {
     border-radius: 0px 0px 24px 24px;
