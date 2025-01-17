@@ -1,19 +1,24 @@
 const menuBtn = document.querySelectorAll(".burger__list");
-const burg=document.querySelectorAll(".burger");
+const burg = document.querySelectorAll(".burger");
 const menuMobile = document.querySelectorAll(".nav__mobile");
 const navArrow = document.querySelectorAll(".nav__arrow");
+const navCross = document.querySelectorAll(".cross");
+
+navCross[0].addEventListener("click", function () {
+  menuMobile[0].classList.remove("nav--active");
+  menuMobile[0].classList.add("nav--diactive");
+  menuBtn[0].checked = false;
+});
+
 menuBtn[0].addEventListener("click", function () {
   if (menuBtn[0].checked) {
-
     menuMobile[0].classList.add("nav--active");
     menuMobile[0].classList.remove("nav--diactive");
   } else {
-   
     menuMobile[0].classList.remove("nav--active");
     menuMobile[0].classList.add("nav--diactive");
   }
 });
-
 
 // menuMobile[0].addEventListener("click", function (event) {
 //   if (event.target !== menuMobile[0]) {
@@ -49,7 +54,6 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
       navArrow[0].classList.remove("nav__arrow--rotate");
-      
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
       navArrow[0].classList.add("nav__arrow--rotate");
