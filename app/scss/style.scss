@@ -233,12 +233,6 @@
   }
 }
 .hero {
-  // display: block;
-  // padding-top: 104px;
-  // border-radius: 32px;
-  // box-shadow: 0px 0px 11px 0px rgba(10, 10, 10, 0.08);
-  // background: linear-gradient(185.95deg, rgba(0, 0, 0, 0) 13.379%,rgba(0, 0, 0, 0.2) 87.338%),rgb(36, 206, 134);
-  // color: rgb(255, 255, 255);
   &__info {
     display: flex;
     align-items: end;
@@ -1106,14 +1100,25 @@ box-shadow: none;
       row-gap: 30px;
     }
   }
+  .btn {
+    &__app {
+      // background: transparent;
+      background-color: rgba(36, 206, 134, 0.85);
+      color: #ffffff;
+      &:hover {
+        background-color: rgba(36, 206, 134, 0.75);
+        //  color: #000000;
+      }
+    }
+   }
   .hero {
     &__title {
       font-size: 42px;
       font-weight: 700;
       line-height: 130%;
-      top: 30px;
+      // top: 30px;
       // display: block;
-      // position: relative;
+      // position: static;
     }
     &__footer-text {
       width: 100%;
@@ -1136,18 +1141,13 @@ box-shadow: none;
       text-align: center;
       width: 100%;
       height: calc(100dvh - 260px);
-      padding-top: 12px;
+      padding-top: 0;
     padding-bottom: 0;
+    gap: 10px;
       // align-items: center;
     }
-    // &__img{
-    //   display: none;
-    // }
     &__text{
-      // padding: 0;
-      margin-top: 24px;
-      margin-bottom: 32px;
-      margin-right: 0;
+      margin: 0;
     }
     &__footer-text{
       text-align: center;
@@ -1155,9 +1155,6 @@ box-shadow: none;
     &__footer-company{
       gap: 16px;
     }
-    // &__info{
-    //   flex-direction: column;
-    // }
   }
   .coach {
     &__content {
@@ -1251,18 +1248,6 @@ box-shadow: none;
       background: rgb(255, 255, 255);
     }
   }
-  // .features{
-  //   &__inner{
-  //     padding: 24px;
-  //     gap: 40px;
-  //     flex-direction: column;
-  //     align-items: center;
-  //   }
-  //   &__content{
-  //     margin-top: 0;
-  //     margin-bottom: 0;
-  //   }
-  // }
   .cta {
     
     &__content {
@@ -1324,11 +1309,15 @@ box-shadow: none;
   }
 }
 @media (max-width:600px){
+  // .inside{
+  //   gap: 10px;
+  // }
   .hero {
     display: flex;
     flex:1;
     &__title {
-      position: relative;
+      // position: relative;
+      position: static;
     }
     &__info{
       flex-direction: column;
